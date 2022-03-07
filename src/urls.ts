@@ -1,6 +1,6 @@
-const appUrl = 'https://mail.google.com/chat/u/0';
+const appUrl = 'https://start.atlassian.com';
 
 export default Object.freeze({
   appUrl,
-  logoutUrl: 'https://www.google.com/accounts/Logout?continue=' + appUrl
+  logoutUrl: 'https://id.atlassian.com/logout?continue=' + appUrl
 })

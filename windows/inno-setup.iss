@@ -4,14 +4,14 @@
 ; {{ }} will be replaced at runtime by js
 
 #define AppId "{E458AEFA-2577-4543-8554-F6335BC2D994}"
-#define AppName "Google Chat Electron"
+#define AppName "Jira Electron"
 #define AppVersion "{{appVersion}}"
-#define AppPublisher "ankurk91"
-#define AppURL "https://github.com/ankurk91/google-chat-electron"
-#define AppExeName "google-chat-electron.exe"
-#define OutputBaseFilename "google-chat-electron-setup-win-x64-{{appVersion}}"
+#define AppPublisher "adrianjagielak"
+#define AppURL "https://github.com/adrianjagielak/jira-electron"
+#define AppExeName "jira-electron.exe"
+#define OutputBaseFilename "jira-electron-setup-win-x64-{{appVersion}}"
 #define OutputDir "../dist/installers"
-#define AppSourceDir "../dist/google-chat-electron-win32-x64/*"
+#define AppSourceDir "../dist/jira-electron-win32-x64/*"
 
 
 [Setup]

@@ -14,7 +14,7 @@ export default (window: BrowserWindow) => {
   return dialog.showMessageBox(window, {
     type: 'info',
     title: 'About',
-    message: 'Google Chat',
+    message: 'Jira',
     detail: packageJson.description + "\n\n" + detail.join('\n'),
     buttons: ['Copy', 'Ok'],
     cancelId: 1,

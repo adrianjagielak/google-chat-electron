@@ -3,7 +3,7 @@ import {WebRequestFilter, OnBeforeSendHeadersListenerDetails, session} from 'ele
 // Let's use Chrome version as Firefox version, rather than using a hard coded version
 const firefoxVersion = parseInt(String(process.versions.chrome)).toFixed(1);
 
-// Prevent Google from tracking if the website is running inside Electron
+// Prevent Atlassian from tracking if the website is running inside Electron
 export const userAgentString = `Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:${firefoxVersion}) Gecko/20100101 Firefox/${firefoxVersion}`
 
 export default () => {

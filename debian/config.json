@@ -1,8 +1,8 @@
 {
-  "src": "./dist/google-chat-electron-linux-x64",
+  "src": "./dist/jira-electron-linux-x64",
   "dest": "./dist/installers/",
   "options": {
-    "productName": "Google Chat",
+    "productName": "Jira",
     "icon": {
       "16x16": "resources/icons/normal/16.png",
       "32x32": "resources/icons/normal/32.png",
@@ -11,11 +11,6 @@
       "256x256": "resources/icons/normal/256.png",
       "scalable": "resources/icons/normal/scalable.svg"
     },
-    "categories": [
-      "Social",
-      "Communication",
-      "Network"
-    ],
     "scripts": {
       "postrm": "debian/scripts/post-remove.sh"
     }

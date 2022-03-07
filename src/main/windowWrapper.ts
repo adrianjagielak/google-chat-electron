@@ -18,7 +18,7 @@ export default (url: string): BrowserWindow => {
     minHeight: 570,
     minWidth: 480,
     center: true,
-    title: 'Google Chat',
+    title: 'Jira',
     backgroundColor: '#E8EAED',
   });
 

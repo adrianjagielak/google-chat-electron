@@ -27,20 +27,15 @@ export default (window: BrowserWindow) => {
 
     const whiteListedHosts = [
       extractHostname(window.webContents.getURL()),
-      'accounts.google.com',
-      'accounts.youtube.com',
-      'chat.google.com',
-      'mail.google.com'
+      'atlassian.com',
+      'atlassian.net'
     ];
 
-    const isDownloadUrl = url.includes('https://chat.google.com/u/0/api/get_attachment_url');
+    const isDownloadUrl = url.includes('https://api.media.atlassian.com/file');
 
-    const isGMailUrl = extractHostname(url) === 'mail.google.com' &&
-      !url.startsWith('https://mail.google.com/chat')
+    const isNotWhitelistedHost = !whiteListedHosts.some(host => extractHostname(url).includes(host));
 
-    const isNotWhitelistedHost = !whiteListedHosts.includes(extractHostname(url));
-
-    if (isGMailUrl || isDownloadUrl || isNotWhitelistedHost) {
+    if (isDownloadUrl || isNotWhitelistedHost) {
 
       setImmediate(() => {
         shell.openExternal(url);

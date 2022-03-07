@@ -38,7 +38,7 @@ export default (window: BrowserWindow) => {
     }
   ]));
 
-  trayIcon.setToolTip('Google Chat');
+  trayIcon.setToolTip('Jira');
 
   if (is.windows) {
     trayIcon.on('click', handleIconClick);

@@ -57,7 +57,7 @@ if (enforceSingleInstance()) {
     })
 }
 
-app.setAppUserModelId('com.electron.google-chat');
+app.setAppUserModelId('dev.adrianjagielak.jira-electron');
 
 app.on('window-all-closed', () => {
   app.exit();

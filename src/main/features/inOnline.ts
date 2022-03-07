@@ -17,9 +17,9 @@ const checkIfOnline = async (timeout = 3000) => {
 }
 
 const checkForInternet = async (window: BrowserWindow) => {
-  const canChat = await checkIfOnline();
+  const isOnline = await checkIfOnline();
 
-  if (!canChat) {
+  if (!isOnline) {
     const offlinePagePath = path.join(app.getAppPath(), 'src/offline/index.html');
     await window.loadURL(`file://${offlinePagePath}`);
     showOfflineNotification(window);
@@ -28,7 +28,7 @@ const checkForInternet = async (window: BrowserWindow) => {
 
 const showOfflineNotification = (window: BrowserWindow) => {
   const notification = new Notification({
-    title: 'Google Chat',
+    title: 'Jira',
     body: `You are offline.\nCheck your internet connection.`,
     silent: true,
     timeoutType: 'default',

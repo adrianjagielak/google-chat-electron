@@ -3,7 +3,7 @@ set -e
 
 # post-remove script will be called even on package upgrades
 # this script should only proceed when end-user specify the --purge flag in app removal command like:
-# sudo apt remove --purge google-chat-electron
+# sudo apt remove --purge jira-electron
 
 if [ "$1" != "purge" ]; then
     echo "Skipped running post removal script."
@@ -14,7 +14,7 @@ echo "Starting post removal script ..."
 
 # Variables
 USER_HOME_DIR=~
-APP_FOLDER_NAME=google-chat-electron
+APP_FOLDER_NAME=jira-electron
 
 # https://stackoverflow.com/questions/7358611/get-users-home-directory-when-they-run-a-script-as-root
 
