@@ -24,6 +24,7 @@ import setupOfflineHandlers, {checkForInternet} from './features/inOnline';
 import logFirstLaunch from './features/firstLaunch';
 import handleNotification from './features/handleNotification';
 import darkTheme from './features/darkTheme';
+import defaultJiraProject from './features/defaultJiraProject';
 import {enforceMacOSAppLocation} from "electron-util";
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -55,6 +56,7 @@ if (enforceSingleInstance()) {
       externalLinks(mainWindow);
       handleNotification(mainWindow);
       darkTheme(mainWindow);
+      defaultJiraProject(mainWindow);
       enforceMacOSAppLocation();
     })
 }

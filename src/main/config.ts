@@ -66,6 +66,10 @@ const schema: Store.Schema<StoreType> = {
         type: 'boolean',
         default: false
       },
+      defaultProjectUrl: {
+        type: 'string',
+        default: 'https://start.atlassian.com'
+      },
     },
     default: {}
   }
