@@ -1,4 +1,4 @@
-# Desktop app for Jira
+# Desktop app for Jira (Work In Progress)
 
 [![latest-tag](https://badgen.net/github/release/adrianjagielak/jira-electron)](https://github.com/adrianjagielak/jira-electron/releases)
 [![downloads](https://img.shields.io/github/downloads/adrianjagielak/jira-electron/total?cacheSeconds=3600)](https://somsubhra.github.io/github-release-stats/?username=adrianjagielak&repository=jira-electron&page=1&per_page=30)
@@ -92,6 +92,10 @@ The app should work on all x64 platforms, but due to lack of time; we test on mo
 | Linux Mint Cinnamon |   20.x    |
 | MacOS               | 10.15, 11 |
 | Windows             | 7, 10, 11 |
+
+### Major features
+
+* Automatic dark theme
 
 ### Acknowledgements
 

@@ -1,9 +1,11 @@
 import path from 'path';
-import {app, BrowserWindow, nativeImage} from 'electron';
+import { app, BrowserWindow, nativeImage, nativeTheme } from 'electron';
 import store from './config';
-import {userAgentString} from './features/userAgent';
+import { userAgentString } from './features/userAgent';
 
 export default (url: string): BrowserWindow => {
+  const isDarkTheme = nativeTheme.shouldUseDarkColors;
+
   const window = new BrowserWindow({
     webPreferences: {
       autoplayPolicy: 'user-gesture-required',
@@ -19,7 +21,7 @@ export default (url: string): BrowserWindow => {
     minWidth: 480,
     center: true,
     title: 'Jira',
-    backgroundColor: '#E8EAED',
+    backgroundColor: isDarkTheme ? '#212121' : '#FFFFFF',
   });
 
   window.once('ready-to-show', () => {
