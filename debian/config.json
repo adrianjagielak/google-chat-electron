@@ -1,5 +1,5 @@
 {
-  "src": "./dist/jira-electron-linux-x64",
+  "src": "./dist/Jira-linux-x64",
   "dest": "./dist/installers/",
   "options": {
     "productName": "Jira",

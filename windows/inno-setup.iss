@@ -9,9 +9,9 @@
 #define AppPublisher "adrianjagielak"
 #define AppURL "https://github.com/adrianjagielak/jira-electron"
 #define AppExeName "jira-electron.exe"
-#define OutputBaseFilename "jira-electron-setup-win-x64-{{appVersion}}"
+#define OutputBaseFilename "Jira-setup-win-x64-{{appVersion}}"
 #define OutputDir "../dist/installers"
-#define AppSourceDir "../dist/jira-electron-win32-x64/*"
+#define AppSourceDir "../dist/Jira-win32-x64/*"
 
 
 [Setup]

@@ -34,7 +34,7 @@ sudo snap connect jira-electron:removable-media :removable-media
 * Install the debian package with this command: (correct the file path yourself)
 
 ```bash
-sudo apt install ~/path/to/jira-electron-xxx-amd64.deb
+sudo apt install ~/path/to/Jira-xxx-amd64.deb
 ```
 
 * :warning: Debian package does not have automatic background updates
