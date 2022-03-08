@@ -68,7 +68,7 @@ or
 * Fix the permission issue with this command
 
 ```bash
-sudo xattr -rd com.apple.quarantine ~/Applications/jira-electron.app
+sudo xattr -rd com.apple.quarantine ~/Applications/Jira.app
 ```
 
 * Above command should fix the Mac-OS Gatekeeper [issue](https://apple.stackexchange.com/questions/262355/)

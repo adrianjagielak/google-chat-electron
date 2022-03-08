@@ -23,7 +23,7 @@
     "pack:mac": "electron-packager . --platform=darwin --arch=x64 --asar --overwrite --out=./dist/ --icon=./resources/icons/normal/mac.icns",
     "build:mac-zip": "bash ./mac/installer-zip.sh",
     "prepack:linux": "npm run clean:dist && npm run ts",
-    "pack:linux": "electron-packager . --platform=linux --arch=x64 --asar --overwrite --out=./dist/",
+    "pack:linux": "electron-packager . --platform=linux --arch=x64 --asar --overwrite --out=./dist/ --executableName=\"jira-electron\"",
     "build:deb": "electron-installer-debian --config=./debian/config.json --arch=amd64",
     "build:deb-checksum": "cd ./dist/installers && sha512sum *.deb > Jira-deb-SHA512.txt",
     "build:snap-clean": "sg lxd -c 'snapcraft clean electron-deb --use-lxd'",
